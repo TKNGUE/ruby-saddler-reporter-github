@@ -113,7 +113,7 @@ module Saddler
 
         # @return [Octokit::Client]
         def client
-          @client ||= Octokit::Client.new(access_token: access_token)
+          @client ||= Octokit::Client.new()
         end
 
         # @return [String, nil] github access token
